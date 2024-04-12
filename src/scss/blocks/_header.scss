@@ -1,0 +1,18 @@
+.header {
+	font-family: FirasansBook;
+	background-color: $dark;
+	color: $light;
+	padding: 16px 56px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.header__nav {
+	@include tablet {
+		display: none;
+	}
+}

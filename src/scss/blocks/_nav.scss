@@ -1,0 +1,28 @@
+.header__nav {
+}
+.nav {
+	font-size: 18px;
+	display: block;
+	// margin: 20px;
+}
+
+@media (max-width: 1000px) {
+	.nav, .prime_btn {
+		display: none;
+	}
+}
+
+.nav__list {
+	display: flex;
+	column-gap: 30px;
+}
+
+.active {
+	color: $color1;
+}
+.nav_link{
+	transition: $transition;
+}
+.nav_link:hover{
+	color: $color3;
+}

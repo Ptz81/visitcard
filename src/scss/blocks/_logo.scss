@@ -1,0 +1,12 @@
+.logo {
+    font-size: 32px;
+    color: $color3;
+    
+    & :hover{
+    color: $color1;
+   
+    }
+}
+.logo_icon{
+transition: $transition;
+}

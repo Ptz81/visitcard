@@ -1,0 +1,24 @@
+.sponsor {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: $gradient2;
+    width: 100%;
+  
+    
+}
+.sponsor_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+
+}
+.sponsor_item{
+    list-style: none;
+}
+
+.sponsor_img {
+    height: 24px;
+    width: auto;
+}
