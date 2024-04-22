@@ -15,6 +15,8 @@ body {
 
 section{
 	padding: 96px 56px;
+	max-width: 1328px;
+	margin: 0 auto;
 }
 
 img {
@@ -57,12 +59,37 @@ h2 {
 }
 
 h3 {
-	@include title(32px, 500, $text-black, italic);
+	@include title(28px, 500, $text-black, italic);
+	margin-bottom: 16px;
+	@media (min-width: 1024px) {
+			@include title(32px, 500, $text-black, italic);
+		}
+}
+.section_title{
+	@include title(32px, 700, $dark);
+	margin-bottom: 40px;
+		@media (min-width: 1024px) {
+			@include title(48px, 500, $dark);
+			margin-bottom: 56px;
+		}
 }
 
 .subtitle {
-	@include title(21px, 500, $text-grey);
+@include title(14px, 600, $color3op);
+margin-bottom: 12px;
+text-transform: uppercase;
+	@media (min-width: 1024px) {
+		@include title(21px, 500, $text-grey);
+	}
+	
 }
+
+.general_subtitle {
+	@include title(21px, 500, $text-grey);
+	
+	
+}
+
 
 .tagline {
 	@include title(20px, 700, $text-grey);
@@ -72,4 +99,26 @@ h3 {
 .project-tagline {
 	@include title(14px);
 	text-transform: uppercase;
+}
+
+.p_lg{
+@include p(16px, 400, $dark, 1.4);
+margin-bottom: 16px;
+@media (min-width: 1024px) {
+		font-size: 18px;
+	}
+}
+
+.p_small{
+@include p(14px, 400, $dark80, 1.4);
+margin-bottom: 14px;
+	@media (min-width: 1024px) {
+		font-size: 16px;
+	}
+}
+
+.small_text{
+	margin-bottom: 14px;
+@include p(14px, 400, $text-grey, 1.4);
+
 }

@@ -11,17 +11,21 @@
 }
 
 .hero_title {
-    @include title(95px, 500, $light, normal, 1);
-
+    @include title(56px, 500, $light, normal, 1);
+    // width: auto;
     background: $gradient2;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 1100px;
+    width: 343px;
     height: auto;
     padding: 0;
     margin-top: 0;
     margin-bottom: 40px;
+    @media (min-width: 1024px) {
+            @include title(95px, 500, $light, normal, 1);
+            width: auto;
+        }
 }
 
 .hero__btns {
