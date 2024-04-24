@@ -1,0 +1,35 @@
+.offer{
+    background-color: $light;
+}
+.offer_wrapper{
+    margin-bottom: 64px;
+    max-width: 474px;
+}
+.offer__list{
+    position: relative;
+    margin-left: 1em;
+   
+}
+.offer__list-item{
+    margin-bottom: 40px;
+}
+
+.list_style-wrapper{
+    width: 48px;
+    border-bottom: 1px solid $dark16;
+    margin-bottom: 32px;
+}
+.list_style-icon{
+    width: 48px;
+    height: 48px;
+    background-image: url('../../img/star.png');
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+.offer_text{
+    margin-top: 12px;
+}
+.offer_title{
+    margin-bottom: 64px;
+}
