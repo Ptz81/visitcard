@@ -14,9 +14,12 @@ body {
 }
 
 section{
-	padding: 96px 56px;
+	padding: 80px 16px;
 	max-width: 1328px;
 	margin: 0 auto;
+	@media (min-width: 1024px) {
+			padding: 96px 56px;
+		}
 }
 
 img {
@@ -54,8 +57,11 @@ h1 {
 }
 
 h2 {
-	@include title(48px);
+	@include title(28px, 500, $text-black, italic);
 	text-transform: uppercase;
+	@media (min-width: 1024px) {
+			@include title(48px);
+		}
 }
 
 h3 {

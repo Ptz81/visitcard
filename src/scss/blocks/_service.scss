@@ -7,23 +7,39 @@
     width: auto;
 }
 
-.container{
-
-}
 
 .services{
     background-color: $light;
     padding: 64px 16px 0;
     @media (min-width:1024px) {
-        padding: 96px 0;
+        padding: 96px 56px 0;
     }
+         &__list {
+             @media(min-width: 1024px) {
+                 position: relative;
+    
+                 &::before {
+                     content: '';
+                     position: absolute;
+                     display: block;
+                     width: 636px;
+                     height: 636px;
+                     bottom: -253px;
+                     left: -376px;
+                     background-image: url('../img/Ellipse.png');
+                     background-repeat: no-repeat;
+                 }
+             }
+         }
 }
 
 .services__item{
     padding-bottom: 40px 0;
     border-bottom: 1px solid $text-grey;
     position: relative;
+    
     @media (min-width:1024px) {
+        padding-bottom: 56px 0;
             display: flex;
             align-items: center;
             flex-wrap: nowrap;
@@ -49,9 +65,11 @@
 }
 
 .main-img{
+    margin: 40px 0px;
 @media (min-width:1024px) {
         order: 0;
         max-width: 432px;
+        margin-bottom: 56px;
     }
 }
 .aux-img{
@@ -59,8 +77,8 @@
     bottom: 64px;
     right: 0;
     @media (min-width:1024px) {
-        position: static;
-        order: 2;
-            max-width: 432px;
+            position: static;
+            order: 2;
+            max-width: 248px;
     }
 }
