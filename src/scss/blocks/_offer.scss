@@ -1,35 +1,97 @@
 .offer{
     background-color: $light;
+        @media (min-width:1024px) {
+                display: flex;
+                justify-content: space-between;
+            }
 }
 .offer_wrapper{
     margin-bottom: 64px;
     max-width: 474px;
 }
+
+.offer__container{
+        @media (min-width:1024px) {
+                max-width: 544px;
+            }
+}
 .offer__list{
     position: relative;
-    margin-left: 1em;
-   
 }
 .offer__list-item{
+    position: relative;
     margin-bottom: 40px;
+    @media (min-width:1024px) {
+            display: flex;
+        }
+}
+.offer__list-item:last-child{
+    margin: 0;
 }
 
 .list_style-wrapper{
     width: 48px;
-    border-bottom: 1px solid $dark16;
-    margin-bottom: 32px;
+    // border-bottom: 1px solid $dark16;
+    margin-bottom: 82px;
+    @media (min-width:1024px) {
+            border: none;
+            width: 100%;
+            margin: 0;    
+    }
 }
+
+.list_style-wrapper::after {
+                    content: '';
+                    position: absolute;
+                    width: 48px;
+                    top: 60px;
+                    left: 0px;
+                    display: block;
+                    border-top: 1px solid $dark16;
+                    margin-top: 30px;
+                    @media (min-width:1024px) {
+                            top: -15px;
+                            left: 65px;
+                            width: 80px;
+                        }
+        }
+
 .list_style-icon{
     width: 48px;
     height: 48px;
     background-image: url('../../img/star.png');
     background-size: cover;
     margin-bottom: 32px;
+    @media (min-width:1024px) {
+        width: 32px;
+        height: 32px;
+        }
+}
+
+.list_style-icon::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: block;
+    border-top: 1px solid black;
+    margin-top: 30px;
 }
 
 .offer_text{
     margin-top: 12px;
+    margin-bottom: 0;
 }
 .offer_title{
     margin-bottom: 64px;
+        @media (min-width:1024px) {
+              max-width: 474px;
+            }
+}
+
+.offer_subtitle{
+    @include title(21px, 500, $text-grey, normal);
+    @media (min-width:1024px) {
+        @include title(32px, 500, $text-grey, italic);
+        }
 }
