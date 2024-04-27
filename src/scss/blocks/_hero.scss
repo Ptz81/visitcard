@@ -24,7 +24,7 @@
     margin-bottom: 40px;
     @media (min-width: 1024px) {
             @include title(95px, 500, $light, normal, 1);
-            width: auto;
+            width: 1200px;
         }
 }
 

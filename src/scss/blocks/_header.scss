@@ -1,5 +1,6 @@
 .header {
-	font-family: FirasansBook;
+	
+	// font-family: FirasansBook;
 	color: $light;
 	&__row {
 		display: flex;
@@ -15,7 +16,8 @@
 }
 
 .container {
-	// max-width: 1328px;
 	padding: 16px 56px;
-		background-color: $dark;
+	background-color: $dark;
+	max-width: 1328px;
+		margin: 0 auto;
 }

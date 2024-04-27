@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+// @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 
 html {
 	scroll-behavior: smooth;
@@ -9,13 +9,13 @@ html {
 body {
 	background-color: var(--page-bg);
 	color: var(--text-color);
-	font-family: var(--font-main);
+	font-family: $font-family;
 	text-wrap: balance;
 }
 
 section{
 	padding: 64px 16px;
-	// max-width: 1328px;
+	max-width: 1328px;
 	margin: 0 auto;
 	@media (min-width: 1024px) {
 			padding: 96px 56px;
