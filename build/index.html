@@ -13,7 +13,7 @@
 
 	<body>
 		<header class="header">
-			<div class="container">
+			<div class="header__container">
 				<div class="header__row">
 					<div class="logo">
 						<a class="logo_icon" href="#">
@@ -65,12 +65,14 @@
 		</header>
 
 		<main class="docs">
-			<section class="hero">
-				<p class="hero_subtitle">Hey, I&#8217;m Taras</p>
-				<h1 class="hero_title">A&#160;young creative developer based in&#160;Kyiv</h1>
-				<div class="hero__btns">
-					<a href="" class="btn btn-secondary">Lets talk</a>
-					<a href="" class="btn btn-primary">My&#160;works</a>
+			<section class="hero__section">
+				<div class="hero">
+					<p class="hero_subtitle">Hey, I&#8217;m Taras</p>
+					<h1 class="hero_title">A&#160;young creative developer based in&#160;Kyiv</h1>
+					<div class="hero__btns">
+						<a href="" class="btn btn-secondary">Lets talk</a>
+						<a href="" class="btn btn-primary">My&#160;works</a>
+					</div>
 				</div>
 			</section>
 			<section class="section sponsor">
@@ -100,17 +102,25 @@
 			</section>
 
 			<section class="about">
-				<div class="imgbox">
-					<img class="about__img" src="./img/avatar.png" type="image/webp" alt="avatar" />
-				</div>
-				<div class="about-description">
-					<p class="subtitle">About</p>
-					<h2 class="section-title">Crafting UNIQUE BRAND EXPERIENCES SINCE 2014</h2>
-					<p class="section-description">
-						With a&#160;Visual Arts degree, my&#160;journey began in&#160;graphic design, crafting logos and marketing materials. Video editing followed, where meticulous
-						attention to&#160;detail set my&#160;work apart, and I&#160;ventured into 3D modeling for immersive experiences.
-					</p>
-					<a href="#" class="btn btn-primary">Schedule a&#160;call</a>
+				<div class="container">
+					<div class="about__container">
+						<div class="imgbox">
+							<img class="about__img" src="./img/avatar.png" type="image/webp" alt="avatar" />
+						</div>
+						<div class="about-description">
+							<p class="subtitle">About</p>
+							<h2 class="section-title about-title">
+								Crafting UNIQUE BRAND EXPERIENCES SINCE 2014
+							</h2>
+							<p class="section-description p-lg">
+								With a&#160;Visual Arts degree, my&#160;journey began in&#160;graphic design, crafting logos and marketing materials. Video editing followed, where
+								meticulous attention to&#160;detail set my&#160;work apart, and I&#160;ventured into 3D modeling for immersive experiences.
+							</p>
+							<div class="about__btn">
+								<a href="#" class="btn btn-primary">Schedule a&#160;call</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="portfolio">
@@ -346,8 +356,70 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container">
-				footer section
+			<div class="footer__wrapper">
+				<div class="footer__wrapper-contacts">
+					<h2 class="footer-title">Contact</h2>
+					<p class="footer-text">
+						Ready to&#160;elevate your visual presence? I&#8217;m here to&#160;bring your creative visions to&#160;life. Feel free to&#160;reach out
+					</p>
+					<ul class="footer-list">
+						<li class="footer-list__item">
+							<p class="footer-list__item-text">Location</p>
+							<a href="https://maps.app.goo.gl/bVuWeSfCE5XoLRxY8" class="footer-list__item-link" target="_blank" rel="noopener nofollow">San Francisco, CA</a>
+						</li>
+						<li class="footer-list__item">
+							<p class="footer-list__item-text">Phone</p>
+							<a href="tel:+331012345678" class="footer-list__item-link">+331012345678</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__wrapper-form">
+					<form class="footer-form">
+						<div class="footer-form__name">
+							<div>
+								<label class="footer-form__label" for="firstName">First name:</label>
+								<input class="footer-form__input" type="text" id="firstName" name="firstName" placeholder="Your First Name" required />
+							</div>
+							<div>
+								<label class="footer-form__label" for="lastName">Last name:</label>
+								<input class="footer-form__input" type="text" id="lastName" name="lastName" placeholder="Your Last Name" required />
+							</div>
+						</div>
+
+						<label class="footer-form__label" for="email">Email Address:</label>
+						<input class="footer-form__input email" type="email" id="email" name="email" placeholder="Email Address" required />
+
+						<p class="footer-form__label">Select Service</p>
+						<div class="footer__radio-wrapper">
+							<label class="radio-label"> <input type="radio" name="service" value="Graphic Design" />Graphic Design </label>
+							<label class="radio-label"> <input type="radio" name="service" value="Video Editing" />Video Editing </label>
+							<label class="radio-label"> <input type="radio" name="service" value="3D Modeling&Animation" />3D Modeling&Animation </label>
+							<label class="radio-label"> <input type="radio" name="service" value="Video Production" />Video Production </label>
+						</div>
+
+						<label class="footer-form__label">
+							Message
+							<textarea class="footer-form__textarea" name="Message" rows="5" placeholder="Write your message here"></textarea>
+						</label>
+
+						<div class="footer-btn__wraper">
+							<button type="submit" class="footer-btn">Submit</button>
+							<p class="footer-descr">
+								By&#160;submitting this form you read and agree to&#160;the Terms & Conditions and our privacy policy.
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="footer__policy">
+				<a href="#" class="policy-logo">Erica JONES</a>
+				<p class="policy-text">All rights reserved @ericajonestemplate</p>
+				<div class="policy-link__wrapper">
+					<a href="#" class="policy-link">Privacy Policy</a>
+					<a href="#" class="policy-link">Cookie Policy</a>
+				</div>
 			</div>
 		</footer>
 

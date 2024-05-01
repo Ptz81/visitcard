@@ -1,8 +1,19 @@
-.hero {
-    /* padding-top: 96px;
-    padding-bottom: 96px; */
-    background-color: $dark;
+.hero__section{
+background-color: $dark;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.hero {
+    // background-color: $dark;
+    padding: 64px 16px;
+    max-width: 1328px;
+        
+    
+        @media (min-width: 1024px) {
+            padding: 96px 56px;
+        }
 }
 
 .hero_subtitle {

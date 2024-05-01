@@ -1,5 +1,120 @@
 <footer class="footer">
-  <div class="container">
-    footer section
+  <div class="footer__wrapper">
+    <div class="footer__wrapper-contacts">
+      <h2 class="footer-title">Contact</h2>
+      <p class="footer-text">
+        Ready to elevate your visual presence? I'm here to bring your creative
+        visions to life. Feel free to reach out
+      </p>
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          <p class="footer-list__item-text">Location</p>
+          <a
+            href="https://maps.app.goo.gl/bVuWeSfCE5XoLRxY8"
+            class="footer-list__item-link"
+            target="_blank"
+            rel="noopener nofollow"
+            >San Francisco, CA</a
+          >
+        </li>
+        <li class="footer-list__item">
+          <p class="footer-list__item-text">Phone</p>
+          <a href="tel:+331012345678" class="footer-list__item-link"
+            >+331012345678</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__wrapper-form">
+      <form class="footer-form">
+        <div class="footer-form__name">
+          <div>
+            <label class="footer-form__label" for="firstName"
+              >First name:</label
+            >
+            <input
+              class="footer-form__input"
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Your First Name"
+              required
+            />
+          </div>
+          <div>
+            <label class="footer-form__label" for="lastName">Last name:</label>
+            <input
+              class="footer-form__input"
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Your Last Name"
+              required
+            />
+          </div>
+        </div>
+
+        <label class="footer-form__label" for="email">Email Address:</label>
+        <input
+          class="footer-form__input email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        />
+
+        <p class="footer-form__label">Select Service</p>
+        <div class="footer__radio-wrapper">
+          <label class="radio-label">
+            <input type="radio" name="service" value="Graphic Design" />Graphic
+            Design
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="service" value="Video Editing" />Video
+            Editing
+          </label>
+          <label class="radio-label">
+            <input
+              type="radio"
+              name="service"
+              value="3D Modeling&Animation"
+            />3D Modeling&Animation
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="service" value="Video Production" />Video
+            Production
+          </label>
+        </div>
+
+        <label class="footer-form__label">
+          Message
+          <textarea
+            class="footer-form__textarea"
+            name="Message"
+            rows="5"
+            placeholder="Write your message here"
+          ></textarea>
+        </label>
+
+        <div class="footer-btn__wraper">
+          <button type="submit" class="footer-btn">Submit</button>
+          <p class="footer-descr">
+            By submitting this form you read and agree to the Terms & Conditions
+            and our privacy policy.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer__policy">
+    <a href="#" class="policy-logo">Erica JONES</a>
+    <p class="policy-text">All rights reserved @ericajonestemplate</p>
+    <div class="policy-link__wrapper">
+      <a href="#" class="policy-link">Privacy Policy</a>
+      <a href="#" class="policy-link">Cookie Policy</a>
+    </div>
   </div>
 </footer>

@@ -1,5 +1,7 @@
 .offer{
     background-color: $light;
+    position: relative;
+    z-index: -1;
         @media (min-width:1024px) {
                 display: flex;
                 justify-content: space-between;
