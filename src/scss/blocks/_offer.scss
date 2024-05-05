@@ -97,3 +97,17 @@
         @include title(32px, 500, $text-grey, italic);
         }
 }
+
+.prime_btn {
+    display: inline;
+    flex-wrap: nowrap;
+    border: 1px solid var(--text-color);
+    border-radius: 40px;
+    padding: 12px 24px;
+    /* width: auto; */
+
+}
+
+.btn {
+    width: auto;
+}
