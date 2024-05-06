@@ -9,3 +9,17 @@ Fancybox.bind('[data-fancybox]', {
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
+
+
+//  document.addEventListener("DOMContentLoaded", function() {
+//     const items = document.querySelectorAll(".portfolio__item");
+
+//     items.forEach(function(item) {
+//       item.addEventListener("click", function() {
+//         items.forEach(function(item) {
+//           item.classList.remove("active");
+//         });
+//         this.classList.add("active");
+//       });
+//     });
+//   });
